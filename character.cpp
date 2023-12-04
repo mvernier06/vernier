@@ -9,4 +9,10 @@ void character::Accelerate(){
   if(this->speed_<this->max_speed_){
     ++ this->speed_;
   }
-}
+};
+
+void character::Break(){
+  if (this->speed_>0){
+    -- this->speed_;
+  }
+};

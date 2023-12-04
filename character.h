@@ -3,7 +3,9 @@ class character{
   public:
     character();
     void Accelerate();
-  private:
+    void Break();
     float speed_;
     float max_speed_;
+  private:
+
 };
