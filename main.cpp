@@ -3,6 +3,6 @@
 
 int main(){
   character char1 = character();
-
+  char1.Accelerate();
   std::exit(EXIT_SUCCESS);
 };
