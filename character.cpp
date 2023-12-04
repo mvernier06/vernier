@@ -16,3 +16,5 @@ void character::Break(){
     -- this->speed_;
   }
 };
+
+character::~character(){};

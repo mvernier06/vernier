@@ -10,6 +10,7 @@ class character{
     inline float max_speed()const{
       return this->max_speed_;
     }
+    ~character();
   private:
     float speed_;
     float max_speed_;
