@@ -5,11 +5,13 @@
 void test_constructeur();
 void test_accelerate();
 void test_break();
+void test_WhatAmI();
 
 int main(){
   test_constructeur();
   test_accelerate();
   test_break();
+  test_WhatAmI();
 
   std::exit(EXIT_SUCCESS);
 };
@@ -47,3 +49,10 @@ void test_break(){
   std::cout<<"La vitesse est max : ";
   std::cout<< char1.max_speed()<<std::endl;
 };
+
+void test_WhatAmI(){
+  std::cout<<"test du WhatAmI : "<< std::endl;
+  mario char1 = mario();
+  std::cout<<"Le character est un : ";
+  std::cout<< char1.WhatAmI()<<std::endl;
+}
