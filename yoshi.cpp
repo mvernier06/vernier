@@ -2,7 +2,7 @@
 #include <string>
 
 yoshi::yoshi() : character(){
-  crest_=0;
+  *crest_=0;
 };
 
 yoshi::yoshi(int nb_crest){

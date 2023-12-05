@@ -103,7 +103,7 @@ void test_accelerate_yoshi(){
 void race(){
   std::vector<character*> race;
   race.push_back(new mario());
-  race.push_back(new yoshi(2));
+  race.push_back(new yoshi());
   std::cout<<"La course commence : elle fait 5 tours :) "<< std::endl;
   for ( auto participant : race){
     for (int i=0; i<5; ++i){
