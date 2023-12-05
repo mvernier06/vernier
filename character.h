@@ -1,3 +1,4 @@
+#include <string>
 
 class character{
   public:
@@ -11,6 +12,7 @@ class character{
       return this->max_speed_;
     }
     ~character();
+    virtual std::string WhatAmI() const = 0;
   private:
     float speed_;
     float max_speed_;
