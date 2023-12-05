@@ -28,6 +28,7 @@ void test_constructeur_mario(){
   std::cout<< char1.speed()<<std::endl;
   std::cout<<"La vitesse est max : ";
   std::cout<< char1.max_speed()<<std::endl;
+  std::cout<<std::endl;
 };
 
 void test_accelerate(){
@@ -38,6 +39,7 @@ void test_accelerate(){
   std::cout<< char1.speed()<<std::endl;
   std::cout<<"La vitesse est max : ";
   std::cout<< char1.max_speed()<<std::endl;
+  std::cout<<std::endl;
 };
 
 void test_break(){
@@ -53,6 +55,7 @@ void test_break(){
   std::cout<< char1.speed()<<std::endl;
   std::cout<<"La vitesse est max : ";
   std::cout<< char1.max_speed()<<std::endl;
+  std::cout<<std::endl;
 };
 
 void test_WhatAmI_mario(){
@@ -60,6 +63,7 @@ void test_WhatAmI_mario(){
   mario char1 = mario();
   std::cout<<"Le character est un : ";
   std::cout<< char1.WhatAmI()<<std::endl;
+  std::cout<<std::endl;
 }
 
 void test_constructeur_yoshi(){
@@ -69,6 +73,7 @@ void test_constructeur_yoshi(){
   std::cout<< char1.speed()<<std::endl;
   std::cout<<"La vitesse est max : ";
   std::cout<< char1.max_speed()<<std::endl;
+  std::cout<<std::endl;
 };
 
 void test_WhatAmI_yoshi(){
@@ -76,4 +81,5 @@ void test_WhatAmI_yoshi(){
   yoshi char1 = yoshi();
   std::cout<<"Le character est un : ";
   std::cout<< char1.WhatAmI()<<std::endl;
+  std::cout<<std::endl;
 };
