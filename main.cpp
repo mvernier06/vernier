@@ -2,6 +2,7 @@
 #include "yoshi.h"
 #include<iostream>
 #include <string>
+#include <vector>
 
 void test_constructeur_mario();
 void test_accelerate();
@@ -10,6 +11,7 @@ void test_WhatAmI_mario();
 void test_constructeur_yoshi();
 void test_WhatAmI_yoshi();
 void test_accelerate_yoshi();
+void race();
 
 int main(){
   test_constructeur_mario();
@@ -19,6 +21,7 @@ int main(){
   test_constructeur_yoshi();
   test_WhatAmI_yoshi();
   test_accelerate_yoshi();
+  race();
 
   std::exit(EXIT_SUCCESS);
 };
@@ -95,4 +98,20 @@ void test_accelerate_yoshi(){
   std::cout<<"Yoshi accélère, sa nouvelle vitesse est : ";
   std::cout<< char1.speed()<<std::endl;
   std::cout<<std::endl;
+};
+
+void race(){
+  std::vector<character*> race;
+  race.push_back(new mario());
+  race.push_back(new yoshi());
+  std::cout<<"La course commence : elle fait 5 tours :) "<< std::endl;
+  for ( auto participant : race){
+    for (int i=0; i<5; ++i){
+      participant->Accelerate();
+    }
+    std::cout<<"A la fin des 5 tours, ";
+    std::cout<<participant->WhatAmI();
+    std::cout<<" a une vitesse de : ";
+    std::cout << participant->speed() << std::endl;
+  }
 };
