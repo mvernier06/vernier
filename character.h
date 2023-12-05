@@ -5,7 +5,7 @@
 class character{
   public:
     character();
-    void Accelerate();
+    virtual void Accelerate();
     void Break();
     inline float speed()const{
       return this->speed_;
@@ -15,7 +15,7 @@ class character{
     }
     ~character();
     virtual std::string WhatAmI() const = 0;
-  private:
+  protected:
     float speed_;
     float max_speed_;
 };
