@@ -1,5 +1,6 @@
-#include "character.h"
+#include "mario.h"
 #include<iostream>
+#include <string>
 
 void test_constructeur();
 void test_accelerate();
@@ -15,7 +16,7 @@ int main(){
 
 void test_constructeur(){
   std::cout<<"test du constructeur : "<< std::endl;
-  character char1 = character();
+  mario char1 = mario();
   std::cout<<"La vitesse est : ";
   std::cout<< char1.speed()<<std::endl;
   std::cout<<"La vitesse est max : ";
@@ -24,7 +25,7 @@ void test_constructeur(){
 
 void test_accelerate(){
   std::cout<<"test de Accelerate() : "<< std::endl;
-  character char1 = character();
+  mario char1 = mario();
   char1.Accelerate();
   std::cout<<"La vitesse est : ";
   std::cout<< char1.speed()<<std::endl;
@@ -34,7 +35,7 @@ void test_accelerate(){
 
 void test_break(){
   std::cout<<"test de Break() : "<< std::endl;
-  character char1 = character();
+  mario char1 = mario();
   char1.Accelerate();
   std::cout<<"La vitesse est : ";
   std::cout<< char1.speed()<<std::endl;
