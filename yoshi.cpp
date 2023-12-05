@@ -6,7 +6,7 @@ yoshi::yoshi(int crest) : character(){
 };
 
 std::string yoshi::WhatAmI() const{
-  return "yoshi";
+  return std::to_string(this->crest_) + " crested Yoshi" ;
 };
 
 void yoshi::Accelerate(){
