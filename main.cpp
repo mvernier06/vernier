@@ -9,6 +9,7 @@ void test_break();
 void test_WhatAmI_mario();
 void test_constructeur_yoshi();
 void test_WhatAmI_yoshi();
+void test_accelerate_yoshi();
 
 int main(){
   test_constructeur_mario();
@@ -17,6 +18,7 @@ int main(){
   test_WhatAmI_mario();
   test_constructeur_yoshi();
   test_WhatAmI_yoshi();
+  test_accelerate_yoshi();
 
   std::exit(EXIT_SUCCESS);
 };
@@ -81,5 +83,16 @@ void test_WhatAmI_yoshi(){
   yoshi char1 = yoshi();
   std::cout<<"Le character est un : ";
   std::cout<< char1.WhatAmI()<<std::endl;
+  std::cout<<std::endl;
+};
+
+void test_accelerate_yoshi(){
+  std::cout<<"test du Accelerate yoshi : "<< std::endl;
+  yoshi char1 = yoshi();
+  std::cout<<"La vitesse de yoshi est : ";
+  std::cout<< char1.speed()<<std::endl;
+  char1.Accelerate();
+  std::cout<<"Yoshi accélère, sa nouvelle vitesse est : ";
+  std::cout<< char1.speed()<<std::endl;
   std::cout<<std::endl;
 };
