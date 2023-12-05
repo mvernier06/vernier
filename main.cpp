@@ -73,7 +73,7 @@ void test_WhatAmI_mario(){
 
 void test_constructeur_yoshi(){
   std::cout<<"test du constructeur du yoshi: "<< std::endl;
-  yoshi char1 = yoshi();
+  yoshi char1 = yoshi(3);
   std::cout<<"La vitesse est : ";
   std::cout<< char1.speed()<<std::endl;
   std::cout<<"La vitesse est max : ";
@@ -83,7 +83,7 @@ void test_constructeur_yoshi(){
 
 void test_WhatAmI_yoshi(){
   std::cout<<"test du WhatAmI de yoshi : "<< std::endl;
-  yoshi char1 = yoshi();
+  yoshi char1 = yoshi(2);
   std::cout<<"Le character est un : ";
   std::cout<< char1.WhatAmI()<<std::endl;
   std::cout<<std::endl;
@@ -91,7 +91,7 @@ void test_WhatAmI_yoshi(){
 
 void test_accelerate_yoshi(){
   std::cout<<"test du Accelerate yoshi : "<< std::endl;
-  yoshi char1 = yoshi();
+  yoshi char1 = yoshi(3);
   std::cout<<"La vitesse de yoshi est : ";
   std::cout<< char1.speed()<<std::endl;
   char1.Accelerate();
@@ -103,7 +103,7 @@ void test_accelerate_yoshi(){
 void race(){
   std::vector<character*> race;
   race.push_back(new mario());
-  race.push_back(new yoshi());
+  race.push_back(new yoshi(2));
   std::cout<<"La course commence : elle fait 5 tours :) "<< std::endl;
   for ( auto participant : race){
     for (int i=0; i<5; ++i){

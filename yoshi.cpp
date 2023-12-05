@@ -1,7 +1,9 @@
 #include "yoshi.h"
 #include <string>
 
-yoshi::yoshi() : character(){};
+yoshi::yoshi(int crest) : character(){
+  this->crest_=crest;
+};
 
 std::string yoshi::WhatAmI() const{
   return "yoshi";
