@@ -1,4 +1,6 @@
 #include <string>
+#ifndef CHARACTER_H
+#define CHARACTER_H
 
 class character{
   public:
@@ -17,3 +19,5 @@ class character{
     float speed_;
     float max_speed_;
 };
+
+#endif

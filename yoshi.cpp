@@ -3,6 +3,6 @@
 
 yoshi::yoshi() : character(){};
 
-std::string mario::WhatAmI() const{
+std::string yoshi::WhatAmI() const{
   return "yoshi";
 };
