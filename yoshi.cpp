@@ -10,7 +10,7 @@ yoshi::yoshi(int nb_crest){
 };
 
 std::string yoshi::WhatAmI() const{
-  return std::to_string(this->crest_) + " crested Yoshi" ;
+  return std::to_string(*crest_) + " crested Yoshi" ;
 };
 
 void yoshi::Accelerate(){
