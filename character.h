@@ -13,7 +13,7 @@ class character{
     inline float max_speed()const{
       return this->max_speed_;
     }
-    ~character();
+    virtual ~character();
     virtual std::string WhatAmI() const = 0;
   protected:
     float speed_;

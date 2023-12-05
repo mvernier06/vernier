@@ -114,4 +114,7 @@ void race(){
     std::cout<<" a une vitesse de : ";
     std::cout << participant->speed() << std::endl;
   }
+  for (auto participant : race) {
+    delete participant;
+  }
 };
