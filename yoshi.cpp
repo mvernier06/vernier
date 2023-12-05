@@ -1,8 +1,12 @@
 #include "yoshi.h"
 #include <string>
 
-yoshi::yoshi(int crest) : character(){
-  this->crest_=crest;
+yoshi::yoshi() : character(){
+  crest_=0;
+};
+
+yoshi::yoshi(int nb_crest){
+  *crest_ = nb_crest;
 };
 
 std::string yoshi::WhatAmI() const{

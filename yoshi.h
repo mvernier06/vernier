@@ -2,9 +2,13 @@
 
 class yoshi : public character{
   public :
-    yoshi(int crest);
+    yoshi();
+    yoshi(int nb_crest);
     virtual std::string WhatAmI() const override;
     virtual void Accelerate() override;
+    virtual ~yoshi(){
+      delete crest_;
+    }
   private :
-    int crest_;
+    int* crest_ = new int;
 };
